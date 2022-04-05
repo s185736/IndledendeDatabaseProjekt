@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3540b6c9-a289-4295-9953-21d02d52bc9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ManipulateUniversity.java" afterDir="false" />
+    <list default="true" id="3540b6c9-a289-4295-9953-21d02d52bc9d" name="Changes" comment="Opdateret til Maven.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ManipulateUniversity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ManipulateUniversity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

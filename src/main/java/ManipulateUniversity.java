@@ -15,7 +15,6 @@ public class ManipulateUniversity {
         // -------------------------
         String username = "root";		// Username for connection
         String password = "02327";	// Password for username
-
         String url = "jdbc:mysql://" + host + ":" + port + "/" + database + "?characterEncoding=" + cp;
 
         try {
