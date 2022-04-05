@@ -1,11 +1,8 @@
-package content;
-
-import content.Person;
-
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Denne klasse repræsenterer en content.Person og evt. en tilhørende tilmelding fra en datafil der modtages fra Tidsmaskinens web løsning
+ * Denne klasse repræsenterer en Person og evt. en tilhørende tilmelding fra en datafil der modtages fra Tidsmaskinens web løsning
  * 
  * Klassen er en del af projektopgaven på Kursus 02327 F22
  * 

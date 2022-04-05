@@ -1,4 +1,4 @@
-package content; /**
+/**
  * Denne klasse håndterer indlæsning af datafil.
  * 
  *  Klassen er en del af projektopgaven på Kursus F21 02327 F22
@@ -28,9 +28,9 @@ public class IndlaesPersonerOgTilmeldinger {
 	SimpleDateFormat dateParser = new SimpleDateFormat("yyyyMMdd");
 
 	/**
-	 * Denne metode indlæser en datafil med personer og tilmeldinder og returnerer en liste med content.PersonOgTilmelding objekter der repræsenterer indholdet i filen.
+	 * Denne metode indlæser en datafil med personer og tilmeldinder og returnerer en liste med PersonOgTilmelding objekter der repræsenterer indholdet i filen.
 	 * @param filename filnavn på den fil der skal indlæses (inkl. sti hvis nødvendigt)
-	 * @return List indeholdende content.PersonOgTilmelding objekter
+	 * @return List indeholdende PersonOgTilmelding objekter
 	 * @throws FileNotFoundException, IOException
 	 */
 	public List<PersonOgTilmelding> indlaesPersonerOgTilmeldinger(String filename) throws FileNotFoundException, IOException {

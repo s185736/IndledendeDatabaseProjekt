@@ -1,5 +1,3 @@
-package content;
-
 import java.io.IOException;
 import java.util.List;
 
@@ -10,9 +8,9 @@ public class IndlaesDatafilEksempel {
 		try {
 			List<PersonOgTilmelding> personerOgTilmeldinger = laeser.indlaesPersonerOgTilmeldinger(args[0]);
 			for(PersonOgTilmelding personOgTilmelding : personerOgTilmeldinger) {
-				System.out.print("content.Person: " +personOgTilmelding.getPerson());
+				System.out.print("Person: " +personOgTilmelding.getPerson());
 				if(personOgTilmelding.getTilmelding() != null)
-					System.out.println("\tcontent.Tilmelding: " +personOgTilmelding.getTilmelding());
+					System.out.println("\tTilmelding: " +personOgTilmelding.getTilmelding());
 				else
 					System.out.println("\t Ingen tilhørende tilmelding");
 			}
