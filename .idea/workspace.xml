@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3540b6c9-a289-4295-9953-21d02d52bc9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ManipulateUniversity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ManipulateUniversity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ManipulateUniversity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,13 +32,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ManipulateUniversity">
     <configuration name="IndlaesDatafilEksempel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="IndlaesDatafilEksempel" />
       <module name="IndledendeDatabaseProjekt" />
@@ -46,8 +47,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ManipulateUniversity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ManipulateUniversity" />
+      <module name="IndledendeDatabaseProjekt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ManipulateUniversity" />
         <item itemvalue="Application.IndlaesDatafilEksempel" />
       </list>
     </recent_temporary>
@@ -61,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649142200990</updated>
       <workItem from="1649142202245" duration="308000" />
-      <workItem from="1649143285073" duration="2433000" />
+      <workItem from="1649143285073" duration="4336000" />
     </task>
     <servers />
   </component>

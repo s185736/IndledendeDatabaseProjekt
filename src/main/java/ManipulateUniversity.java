@@ -8,13 +8,13 @@ public class ManipulateUniversity {
         // -----------------------------------
         String host = "localhost"; //host is "localhost" or "127.0.0.1"
         String port = "3306"; //port is where to communicate with the RDBM system
-        String database = "university_db"; //database containing tables to be queried
+        String database = "tidsmaskineDatabase"; //database containing tables to be queried
         String cp = "utf8"; //Database codepage supporting danish (i.e. æøåÆØÅ)
 
         // Set username og password.
         // -------------------------
         String username = "root";		// Username for connection
-        String password = "02327";	// Password for username
+        String password = "Sammy123";	// Password for username
 
         String url = "jdbc:mysql://" + host + ":" + port + "/" + database + "?characterEncoding=" + cp;
 
