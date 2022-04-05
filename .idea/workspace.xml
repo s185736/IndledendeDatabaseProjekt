@@ -5,31 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3540b6c9-a289-4295-9953-21d02d52bc9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndledendeDatabaseProjekt.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndledendeDatabaseProjekt/IndlaesDatafilEksempel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndledendeDatabaseProjekt/IndlaesPersonerOgTilmeldinger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndledendeDatabaseProjekt/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndledendeDatabaseProjekt/PersonOgTilmelding.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndledendeDatabaseProjekt/Tilmelding.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/IndlaesDatafilEksempel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/IndlaesPersonerOgTilmeldinger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/PersonOgTilmelding.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/Tilmelding.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ManipulateUniversity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27MuIlWj5nGOlguPooWp4kYTGCF" />
   <component name="ProjectViewState">
@@ -41,6 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="IndlaesDatafilEksempel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -65,6 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649142200990</updated>
       <workItem from="1649142202245" duration="308000" />
+      <workItem from="1649143285073" duration="2433000" />
     </task>
     <servers />
   </component>
