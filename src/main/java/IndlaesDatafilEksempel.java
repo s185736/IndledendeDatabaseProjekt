@@ -5,21 +5,28 @@ import java.util.List;
 public class IndlaesDatafilEksempel extends ManipulateUniversity{
 
 	public static void main(String[] args) {
+
 		IndlaesPersonerOgTilmeldinger laeser = new IndlaesPersonerOgTilmeldinger();
 		try {
 
 			ManipulateUniversity db = new ManipulateUniversity();
+			db.CSVFile();
+			/*
 			db.ActionDatabase();
+
 
 			List<PersonOgTilmelding> personerOgTilmeldinger = laeser.indlaesPersonerOgTilmeldinger(args[0]);
 			for(PersonOgTilmelding personOgTilmelding : personerOgTilmeldinger) {
 				System.out.print("Person: " +personOgTilmelding.getPerson());
 				if(personOgTilmelding.getTilmelding() != null)
 					System.out.println("\tTilmelding: " +personOgTilmelding.getTilmelding());
+
 				else
 					System.out.println("\t Ingen tilhørende tilmelding");
 			}
-		} catch (IOException e) {
+			*/
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}

@@ -23,11 +23,11 @@ public class ManipulateUniversity {
         String cp = "utf8"; //Database codepage supporting danish (i.e. æøåÆØÅ)
 
         String username = "root";		// Username for connection
-        String password = "02327";	// Password for username
+        String password = "";	// Password for username
         String url = "jdbc:mysql://" + host + ":" + port + "/" + database + "?characterEncoding=" + cp;
 
         /*Husk, at ændre dette...*/
-        String csvFile = "C:\\Users\\Privat\\Desktop\\tilmaeldinger.csv";
+        String csvFile = "./src/tilmeldinger.csv";
 
             int size = 20;
             Connection connection = null;
@@ -36,7 +36,11 @@ public class ManipulateUniversity {
                 connection = DriverManager.getConnection(url,username,password);
                 connection.setAutoCommit(false);
 
-                String sql_command = "insert into person(email, fornavn, efternavn, koen, foedselsdato) values(?,?,?,?,?)";
+                String q = "SELECT * FROM person";
+                Statement st = connection.createStatement();
+                ResultSet rs = st.executeQuery(q);
+
+                String sql_command = "insert into person(email, fornavn, efternavn, adresse, koen, foedselsdato) values(?,?,?,?,?,?)";
 
                 PreparedStatement prepstat = connection.prepareStatement(sql_command);
                 BufferedReader bufread = new BufferedReader(new FileReader(csvFile));
@@ -47,19 +51,28 @@ public class ManipulateUniversity {
                 bufread.readLine();
                 while ((lineText=bufread.readLine())!=null){
                     String[] data=lineText.split(",");
+                    String[] row=data[0].split(";");
+                    String email = row[0];
+                    String[] navn=row[1].split(" ");
+                    String fornavn = navn[0];
+                    String efternavn = navn[1];
+                    String adresse = row[2];
+                    String koen = row[3];
+                    String foedselsdato = row[4];
+                    /*
+                    String forening = row[5];
+                    String aktivitet = row[6];
+                    String dato = row[7];
+                    */
 
-                    String email = data[0];
-                    String fornavn = data[0];
-                    String efternavn = data[1];
-                    String koen = data[1];
-                    String foedselsdato = data[1];
                     //int foedselsdato = Integer.parseInt(data[1]);
 
                     prepstat.setString(1,email);
                     prepstat.setString(2,fornavn);
-                    prepstat.setString(2,efternavn);
-                    prepstat.setString(2,koen);
-                    prepstat.setInt(2, Integer.parseInt(foedselsdato));
+                    prepstat.setString(3,efternavn);
+                    prepstat.setString(4,adresse);
+                    prepstat.setString(5,koen);
+                    prepstat.setInt(6, Integer.parseInt(foedselsdato));
 
                     prepstat.addBatch();
 
