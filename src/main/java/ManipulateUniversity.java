@@ -29,24 +29,31 @@ public class ManipulateUniversity {
         /*Husk, at ændre dette...*/
         String csvFile = "./src/tilmeldinger.csv";
 
+
             int size = 20;
             Connection connection = null;
 
             try{
                 connection = DriverManager.getConnection(url,username,password);
                 connection.setAutoCommit(false);
-
                 String q = "SELECT * FROM person";
                 Statement st = connection.createStatement();
                 ResultSet rs = st.executeQuery(q);
-
                 String sql_command = "insert into person(email, fornavn, efternavn, adresse, koen, foedselsdato) values(?,?,?,?,?,?)";
-
                 PreparedStatement prepstat = connection.prepareStatement(sql_command);
                 BufferedReader bufread = new BufferedReader(new FileReader(csvFile));
 
                 String lineText = null;
-                int count=0;
+                int count = 0;
+
+                /**start af select: tjekke hvor mange rækker der er..**/
+                /*Herunder har vi implementeret hvordan vi tjekker hvor mange rækker der er i databasen.*/
+                /*String strS = "Select * From projekt.personID;"; //skal lige tjekkes From, hvor den får data fra navnet på det i MySQL.
+                System.out.println("SQL statement er: "+strS+"\n");
+                ResultSet resultS = st.executeQuery(strS);
+                while (resultS.next()){
+                    ++count;
+                }*/
 
                 bufread.readLine();
                 while ((lineText=bufread.readLine())!=null){
