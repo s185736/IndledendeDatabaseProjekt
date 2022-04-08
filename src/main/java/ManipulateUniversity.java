@@ -100,7 +100,7 @@ public class ManipulateUniversity {
             }
         }
 
-    public void ActionDatabase() {
+    public static void ActionDatabase() {
         // Tilpas variable til jeres database.
         // -----------------------------------
         String host = "localhost"; //host is "localhost" or "127.0.0.1"
