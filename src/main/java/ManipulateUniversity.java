@@ -40,7 +40,10 @@ public class ManipulateUniversity {
                 Statement st = connection.createStatement();
                 ResultSet rs = st.executeQuery(q);
                 String sql_command = "insert into person(email, fornavn, efternavn, adresse, koen, foedselsdato) values(?,?,?,?,?,?)";
+                //String sql_command2 = "insert into personTilmelding(email, fornavn, efternavn, koen, foedselsdato, foreningsId, eventTypeId, eventDato) values(?,?,?,?,?,?,?,?)";
+                //String sql_command2 = "insert into foreningtilmelding(foreningsId, eventTypeId, eventDato) values(?,?,?)";
                 PreparedStatement prepstat = connection.prepareStatement(sql_command);
+                //PreparedStatement prepstat2 = connection.prepareStatement(sql_command2);
                 BufferedReader bufread = new BufferedReader(new FileReader(csvFile));
 
                 String lineText = null;
@@ -66,13 +69,17 @@ public class ManipulateUniversity {
                     String adresse = row[2];
                     String koen = row[3];
                     String foedselsdato = row[4];
+                    // For personTilmelding
                     /*
-                    String forening = row[5];
-                    String aktivitet = row[6];
-                    String dato = row[7];
-                    */
+                    String foreningsId = row[5];
+                    String eventTypeId = row[6];
+                    String eventDato = row[7];
+
+                     */
+
 
                     //int foedselsdato = Integer.parseInt(data[1]);
+
 
                     prepstat.setString(1,email);
                     prepstat.setString(2,fornavn);
@@ -83,13 +90,29 @@ public class ManipulateUniversity {
 
                     prepstat.addBatch();
 
+                    /*
+                    //prepstat2.setString(1,email);
+                    //prepstat2.setString(2,fornavn);
+                    //prepstat2.setString(3,efternavn);
+                    //prepstat2.setString(4,koen);
+                    //prepstat2.setInt(5, Integer.parseInt(foedselsdato));
+
+                    prepstat2.setString(1,foreningsId);
+                    prepstat2.setString(2,eventTypeId);
+                    prepstat2.setInt(3,Integer.parseInt(eventDato));
+                    prepstat2.addBatch();
+
+                     */
+
                     if (count % size == 0){
                         prepstat.executeBatch();
+                        //prepstat2.executeBatch();
                     }
                 }
                 /*lukker alt ned.*/
                 bufread.close();
                 prepstat.executeBatch();
+               // prepstat2.executeBatch();
                 connection.commit();
                 connection.close();
                 System.out.println("Data er blevet importeret...");
